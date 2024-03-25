@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Food4u</string>
+    <string name="navbar">NavBar</string>
+    <string name="bag">bag</string>
+</resources>
