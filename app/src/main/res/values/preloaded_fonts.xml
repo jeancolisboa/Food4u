@@ -3,5 +3,7 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/andika</item>
         <item>@font/cousine</item>
+        <item>@font/delius</item>
+        <item>@font/didact_gothic</item>
     </array>
 </resources>

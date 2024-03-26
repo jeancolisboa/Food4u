@@ -13,23 +13,32 @@
         android:orientation="horizontal"
         android:id="@+id/linear_layout"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/image_nav_bar"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:src="@drawable/ic_nav_bar"
-            android:layout_marginEnd="280dp"
-            android:contentDescription="@string/navbar" />
+            android:contentDescription="@string/navbar"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear_layout_right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/image_bag"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:src="@drawable/ic_bag"
-            android:contentDescription="@string/bag" />
+            android:contentDescription="@string/bag"/>
+
     </LinearLayout>
 
     <TextView
@@ -37,12 +46,13 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:fontFamily="@font/cousine"
+        android:fontFamily="@font/didact_gothic"
+        android:paddingTop="16dp"
         android:text="Deliciosas comidas \npara você!"
-        android:textSize="25sp"
         android:textColor="@color/black"
+        android:textSize="38sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linear_layout" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,8 +63,8 @@
         android:background="@drawable/background_search_main">
 
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:src="@drawable/ic_search"
             android:layout_gravity="center_vertical"/>
 
@@ -68,5 +78,42 @@
             android:padding="8dp"/>
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_home"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/icon_home"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/image_heart"/>
+
+    <ImageView
+        android:id="@+id/image_heart"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/icon_heart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image_home"
+        app:layout_constraintEnd_toStartOf="@id/image_person"/>
+
+    <ImageView
+        android:id="@+id/image_person"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/icon_person"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image_heart"
+        app:layout_constraintEnd_toStartOf="@+id/image_history"/>
+
+    <ImageView
+        android:id="@+id/image_history"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/icon_history"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_person"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
