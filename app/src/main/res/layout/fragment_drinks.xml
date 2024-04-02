@@ -66,7 +66,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:shapeAppearanceOverlay="@style/circular"
-                    app:srcCompat="@drawable/image_bacon" />
+                    app:srcCompat="" />
 
                 <TextView
                     android:id="@+id/text_drink_pepsi_fund"
@@ -111,7 +111,7 @@
                     app:layout_constraintStart_toStartOf="@id/text_drink_pepsi_fund"
                     app:layout_constraintTop_toTopOf="parent"
                     app:shapeAppearanceOverlay="@style/circular"
-                    app:srcCompat="@drawable/image_bacon" />
+                    app:srcCompat="@drawable/image_drink_pepsi" />
 
                 <TextView
                     android:id="@+id/text_drink_sprite_fund"
