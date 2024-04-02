@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DrinksFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <HorizontalScrollView
+            android:id="@+id/scroll_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="50dp">
+
+                <TextView
+                    android:id="@+id/text_drink_coca_fund"
+                    android:layout_width="180dp"
+                    android:layout_height="230dp"
+                    android:background="@drawable/rounded_edges_price"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_coca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="64dp"
+                    android:text="Coca Cola"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="@id/text_drink_coca_fund"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/image_drink_coca" />
+
+                <TextView
+                    android:id="@+id/text_price_coca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="64dp"
+                    android:text="R$ 9,00"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/text_drink_coca_fund"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_coca" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/image_drink_coca"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintEnd_toEndOf="@id/text_drink_coca_fund"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/circular"
+                    app:srcCompat="@drawable/image_bacon" />
+
+                <TextView
+                    android:id="@+id/text_drink_pepsi_fund"
+                    android:layout_width="180dp"
+                    android:layout_height="230dp"
+                    android:layout_marginStart="32dp"
+                    android:background="@drawable/rounded_edges_price"
+                    app:layout_constraintStart_toEndOf="@id/text_drink_coca_fund"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_pepsi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="64dp"
+                    android:text="Pepsi"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@id/text_drink_pepsi_fund"
+                    app:layout_constraintEnd_toEndOf="@id/text_drink_pepsi_fund"
+                    app:layout_constraintTop_toBottomOf="@id/image_drink_pepsi" />
+
+                <TextView
+                    android:id="@+id/text_price_pepsi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="64dp"
+                    android:text="R$ 8,50"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/text_drink_pepsi_fund"
+                    app:layout_constraintStart_toStartOf="@id/text_drink_pepsi_fund"
+                    app:layout_constraintTop_toBottomOf="@id/text_pepsi" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/image_drink_pepsi"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintEnd_toEndOf="@id/text_drink_pepsi_fund"
+                    app:layout_constraintStart_toStartOf="@id/text_drink_pepsi_fund"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/circular"
+                    app:srcCompat="@drawable/image_bacon" />
+
+                <TextView
+                    android:id="@+id/text_drink_sprite_fund"
+                    android:layout_width="180dp"
+                    android:layout_height="230dp"
+                    android:layout_marginStart="32dp"
+                    android:background="@drawable/rounded_edges_price"
+                    app:layout_constraintStart_toEndOf="@id/text_drink_pepsi_fund"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_sprite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="64dp"
+                    android:text="Sprite"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@id/text_drink_sprite_fund"
+                    app:layout_constraintEnd_toEndOf="@id/text_drink_sprite_fund"
+                    app:layout_constraintTop_toBottomOf="@id/image_drink_sprite" />
+
+                <TextView
+                    android:id="@+id/text_price_sprite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="64dp"
+                    android:text="R$ 8,00"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/text_drink_sprite_fund"
+                    app:layout_constraintStart_toStartOf="@id/text_drink_sprite_fund"
+                    app:layout_constraintTop_toBottomOf="@id/text_sprite" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/image_drink_sprite"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintEnd_toEndOf="@id/text_drink_sprite_fund"
+                    app:layout_constraintStart_toStartOf="@id/text_drink_sprite_fund"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/circular"
+                    app:srcCompat="@drawable/image_bacon" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </HorizontalScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
