@@ -38,7 +38,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="64dp"
-                    android:text="Coca Cola"
+                    android:text="@string/drink_coca"
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="@id/text_drink_coca_fund"
                     app:layout_constraintStart_toStartOf="parent"
@@ -50,7 +50,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="64dp"
-                    android:text="R$ 9,00"
+                    android:text="@string/price_9"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="@id/text_drink_coca_fund"
@@ -66,7 +66,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:shapeAppearanceOverlay="@style/circular"
-                    app:srcCompat="" />
+                    app:srcCompat="@drawable/image_drink_coca" />
 
                 <TextView
                     android:id="@+id/text_drink_pepsi_fund"
@@ -83,7 +83,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="64dp"
-                    android:text="Pepsi"
+                    android:text="@string/drink_pepsi"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="@id/text_drink_pepsi_fund"
                     app:layout_constraintEnd_toEndOf="@id/text_drink_pepsi_fund"
@@ -95,7 +95,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="64dp"
-                    android:text="R$ 8,50"
+                    android:text="@string/price_8_5"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="@id/text_drink_pepsi_fund"
@@ -128,7 +128,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="64dp"
-                    android:text="Sprite"
+                    android:text="@string/drink_sprite"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="@id/text_drink_sprite_fund"
                     app:layout_constraintEnd_toEndOf="@id/text_drink_sprite_fund"
@@ -140,7 +140,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="64dp"
-                    android:text="R$ 8,00"
+                    android:text="@string/price_8"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="@id/text_drink_sprite_fund"
@@ -156,7 +156,7 @@
                     app:layout_constraintStart_toStartOf="@id/text_drink_sprite_fund"
                     app:layout_constraintTop_toTopOf="parent"
                     app:shapeAppearanceOverlay="@style/circular"
-                    app:srcCompat="@drawable/image_bacon" />
+                    app:srcCompat="@drawable/image_drink_sprite" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
