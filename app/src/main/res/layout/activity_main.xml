@@ -18,8 +18,8 @@
 
         <ImageView
             android:id="@+id/image_nav_bar"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:src="@drawable/ic_nav_bar"
             android:contentDescription="@string/navbar"/>
 
@@ -34,9 +34,20 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+            android:id="@+id/image_shopping_basket"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/icon_shopping_basket"
+            android:layout_gravity="center"
+            app:tint="@color/orange"
+            android:layout_margin="2dp"
+            android:contentDescription="@string/shopping_basket"
+            android:visibility="invisible"/>
+
+        <ImageView
             android:id="@+id/image_bag"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:src="@drawable/ic_bag"
             android:contentDescription="@string/bag"/>
 
@@ -105,6 +116,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/snacks"
                 android:textSize="18sp"
+                android:textColor="@drawable/text_color_selector"
                 android:layout_margin="14dp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -117,6 +129,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/drinks"
                 android:textSize="18sp"
+                android:textColor="@drawable/text_color_selector"
                 android:layout_margin="14dp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -124,10 +137,12 @@
                 app:layout_constraintBottom_toBottomOf="parent"/>
 
             <TextView
+                android:id="@+id/text_combos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/combos"
                 android:textSize="18sp"
+                android:textColor="@drawable/text_color_selector"
                 android:layout_margin="14dp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -135,6 +150,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"/>
 
             <TextView
+                android:id="@+id/text_salads"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/salads"
@@ -146,6 +162,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"/>
 
             <TextView
+                android:id="@+id/text_chicken"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/chickens"
@@ -157,6 +174,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"/>
 
             <TextView
+                android:id="@+id/text_ice_cream"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ice_cream"

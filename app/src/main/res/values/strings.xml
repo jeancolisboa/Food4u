@@ -27,4 +27,7 @@
     <string name="price_9">R$ 9,00</string>
     <string name="price_8_5">R$ 8,50</string>
     <string name="price_8">R$ 8,00</string>
+    <string name="quantity_less">-</string>
+    <string name="quantity_plus">+</string>
+    <string name="shopping_basket">shopping_basket</string>
 </resources>

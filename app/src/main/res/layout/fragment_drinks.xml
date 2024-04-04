@@ -58,6 +58,51 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/text_coca" />
 
+                <TextView
+                    android:id="@+id/text_coca_less"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="@string/quantity_less"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    app:layout_constraintStart_toStartOf="@id/text_price_coca"
+                    app:layout_constraintEnd_toStartOf="@id/text_coca_plus"
+                    app:layout_constraintTop_toBottomOf="@id/text_price_coca"
+                    app:layout_constraintBottom_toBottomOf="@id/text_drink_coca_fund"/>
+
+                <TextView
+                    android:id="@+id/text_coca_plus"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="@string/quantity_plus"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    app:layout_constraintStart_toEndOf="@id/text_coca_less"
+                    app:layout_constraintEnd_toEndOf="@id/text_price_coca"
+                    app:layout_constraintTop_toBottomOf="@id/text_price_coca"
+                    app:layout_constraintBottom_toBottomOf="@id/text_drink_coca_fund"/>
+
+                <EditText
+                    android:id="@+id/edit_quantity_coca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/orange"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    app:layout_constraintTop_toTopOf="@id/text_drink_coca_fund"
+                    app:layout_constraintStart_toEndOf="@id/image_drink_coca"
+                    app:layout_constraintEnd_toEndOf="@id/text_drink_coca_fund"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/image_drink_coca"
                     android:layout_width="100dp"
@@ -103,6 +148,51 @@
                     app:layout_constraintStart_toStartOf="@id/text_drink_pepsi_fund"
                     app:layout_constraintTop_toBottomOf="@id/text_pepsi" />
 
+                <TextView
+                    android:id="@+id/text_pepsi_less"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="@string/quantity_less"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    app:layout_constraintStart_toStartOf="@id/text_price_pepsi"
+                    app:layout_constraintEnd_toStartOf="@id/text_pepsi_plus"
+                    app:layout_constraintTop_toBottomOf="@id/text_price_pepsi"
+                    app:layout_constraintBottom_toBottomOf="@id/text_drink_pepsi_fund"/>
+
+                <TextView
+                    android:id="@+id/text_pepsi_plus"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="@string/quantity_plus"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    app:layout_constraintStart_toEndOf="@id/text_pepsi_less"
+                    app:layout_constraintEnd_toEndOf="@id/text_price_pepsi"
+                    app:layout_constraintTop_toBottomOf="@id/text_price_pepsi"
+                    app:layout_constraintBottom_toBottomOf="@id/text_drink_pepsi_fund"/>
+
+                <EditText
+                    android:id="@+id/edit_quantity_pepsi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/orange"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    app:layout_constraintTop_toTopOf="@id/text_drink_pepsi_fund"
+                    app:layout_constraintStart_toEndOf="@id/image_drink_pepsi"
+                    app:layout_constraintEnd_toEndOf="@id/text_drink_pepsi_fund"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/image_drink_pepsi"
                     android:layout_width="100dp"
@@ -147,6 +237,51 @@
                     app:layout_constraintEnd_toEndOf="@id/text_drink_sprite_fund"
                     app:layout_constraintStart_toStartOf="@id/text_drink_sprite_fund"
                     app:layout_constraintTop_toBottomOf="@id/text_sprite" />
+
+                <TextView
+                    android:id="@+id/text_sprite_less"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="@string/quantity_less"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    app:layout_constraintStart_toStartOf="@id/text_price_sprite"
+                    app:layout_constraintEnd_toStartOf="@id/text_sprite_plus"
+                    app:layout_constraintTop_toBottomOf="@id/text_price_sprite"
+                    app:layout_constraintBottom_toBottomOf="@id/text_drink_sprite_fund"/>
+
+                <TextView
+                    android:id="@+id/text_sprite_plus"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="@string/quantity_plus"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    app:layout_constraintStart_toEndOf="@id/text_sprite_less"
+                    app:layout_constraintEnd_toEndOf="@id/text_price_sprite"
+                    app:layout_constraintTop_toBottomOf="@id/text_price_sprite"
+                    app:layout_constraintBottom_toBottomOf="@id/text_drink_sprite_fund"/>
+
+                <EditText
+                    android:id="@+id/edit_quantity_sprite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/orange"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    app:layout_constraintTop_toTopOf="@id/text_drink_sprite_fund"
+                    app:layout_constraintStart_toEndOf="@id/image_drink_sprite"
+                    app:layout_constraintEnd_toEndOf="@id/text_drink_sprite_fund"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/image_drink_sprite"

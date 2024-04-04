@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".SnackFragment">
+    tools:context=".SnackFragment"
+    android:id="@+id/fragment_snack_layout">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -58,6 +59,51 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/text_bacon" />
 
+                <TextView
+                    android:id="@+id/text_bacon_less"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="@string/quantity_less"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    app:layout_constraintStart_toStartOf="@id/text_price_bacon"
+                    app:layout_constraintEnd_toStartOf="@id/text_bacon_plus"
+                    app:layout_constraintTop_toBottomOf="@id/text_price_bacon"
+                    app:layout_constraintBottom_toBottomOf="@id/text_bacon_fund"/>
+
+                <TextView
+                    android:id="@+id/text_bacon_plus"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="@string/quantity_plus"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    app:layout_constraintStart_toEndOf="@id/text_bacon_less"
+                    app:layout_constraintEnd_toEndOf="@id/text_price_bacon"
+                    app:layout_constraintTop_toBottomOf="@id/text_price_bacon"
+                    app:layout_constraintBottom_toBottomOf="@id/text_bacon_fund"/>
+
+                <EditText
+                    android:id="@+id/edit_quantity_bacon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/orange"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    app:layout_constraintTop_toTopOf="@id/text_bacon_fund"
+                    app:layout_constraintStart_toEndOf="@id/image_bacon"
+                    app:layout_constraintEnd_toEndOf="@id/text_bacon_fund"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/image_bacon"
                     android:layout_width="100dp"
@@ -103,6 +149,49 @@
                     app:layout_constraintStart_toStartOf="@id/text_egg_fund"
                     app:layout_constraintTop_toBottomOf="@id/text_egg" />
 
+                <TextView
+                    android:id="@+id/text_egg_less"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="@string/quantity_less"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    app:layout_constraintStart_toStartOf="@id/text_price_egg"
+                    app:layout_constraintEnd_toStartOf="@id/text_egg_plus"
+                    app:layout_constraintTop_toBottomOf="@id/text_price_egg"/>
+
+                <TextView
+                    android:id="@+id/text_egg_plus"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="@string/quantity_plus"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    app:layout_constraintStart_toEndOf="@id/text_egg_less"
+                    app:layout_constraintEnd_toEndOf="@id/text_price_egg"
+                    app:layout_constraintTop_toBottomOf="@id/text_price_egg"/>
+
+                <EditText
+                    android:id="@+id/edit_quantity_egg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/orange"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    app:layout_constraintTop_toTopOf="@id/text_egg_fund"
+                    app:layout_constraintStart_toEndOf="@id/image_egg"
+                    app:layout_constraintEnd_toEndOf="@id/text_egg_fund"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
+
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/image_egg"
                     android:layout_width="100dp"
@@ -147,6 +236,49 @@
                     app:layout_constraintEnd_toEndOf="@id/text_chicken_fund"
                     app:layout_constraintStart_toStartOf="@id/text_chicken_fund"
                     app:layout_constraintTop_toBottomOf="@id/text_chicken" />
+
+                <TextView
+                    android:id="@+id/text_chicken_less"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="@string/quantity_less"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    app:layout_constraintStart_toStartOf="@id/text_price_chicken"
+                    app:layout_constraintEnd_toStartOf="@id/text_chicken_plus"
+                    app:layout_constraintTop_toBottomOf="@id/text_price_chicken"/>
+
+                <TextView
+                    android:id="@+id/text_chicken_plus"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="@string/quantity_plus"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    app:layout_constraintStart_toEndOf="@id/text_chicken_less"
+                    app:layout_constraintEnd_toEndOf="@id/text_price_chicken"
+                    app:layout_constraintTop_toBottomOf="@id/text_price_chicken"/>
+
+                <EditText
+                    android:id="@+id/edit_quantity_chicken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/orange"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    app:layout_constraintTop_toTopOf="@id/text_chicken_fund"
+                    app:layout_constraintStart_toEndOf="@id/image_chicken"
+                    app:layout_constraintEnd_toEndOf="@id/text_chicken_fund"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/image_chicken"
