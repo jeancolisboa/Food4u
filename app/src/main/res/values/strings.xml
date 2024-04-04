@@ -30,4 +30,8 @@
     <string name="quantity_less">-</string>
     <string name="quantity_plus">+</string>
     <string name="shopping_basket">shopping_basket</string>
+    <string name="phrase_payment">O total do \n seu pedido deu:</string>
+    <string name="pay_request">Pagar</string>
+    <string name="cancel_request">Cancelar</string>
+    <string name="price">R$</string>
 </resources>

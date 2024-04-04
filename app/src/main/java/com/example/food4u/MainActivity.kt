@@ -1,10 +1,12 @@
 package com.example.food4u
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import androidx.core.content.ContextCompat
+import androidx.core.view.isVisible
 import androidx.fragment.app.FragmentContainerView
 import com.example.food4u.databinding.ActivityMainBinding
 
@@ -43,6 +45,7 @@ class MainActivity : AppCompatActivity() {
         val textViewSalads = binding.textSalads
         val textViewChicken = binding.textChicken
         val textViewIceCream = binding.textIceCream
+        val imageView = binding.imageBag
 
         //eventos
         textViewSnack.setOnClickListener {
@@ -51,6 +54,10 @@ class MainActivity : AppCompatActivity() {
 
         textViewDrink.setOnClickListener {
             showDrinkFragment()
+        }
+
+        imageView.setOnClickListener{
+            callPayment()
         }
 
     }
@@ -113,5 +120,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun callPayment() {
+        val imageShoppingBasket = findViewById<ImageView>(R.id.image_shopping_basket)
+
+        if(imageShoppingBasket.isVisible) {
+            startActivity(Intent(this, PaymentActivity::class.java))
+        }
+    }
 
 }
